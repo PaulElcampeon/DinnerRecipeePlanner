@@ -7,10 +7,15 @@
     <title>Recipee</title>
 </head>
 <body>
-    <div id="recipeeForm">
-        <form action="/recipee" Method="POST">
+    <button id="addIngredient">Add Ingredient</button>
+    <div id="recipeeFormDiv">
+        <form id="recipeeForm" action="/recipee" Method="POST">
             <h1>Title Of Your Dinner</h1>
             <input type="text" name="Title"><br><br>
+            <h1>Date you want to cook your meal for (YYYY-MM-DD)</h1>
+            <input type="text" name="mealdate"><br>
+            <h1>What time do you want your meal to start (HH:MM:SS)</h1>
+            <input type="text" name="mealTime"><br><br>
             <h1>Ingredient 1</h1>
             <input type="text" name="Ingredient1">
             <h1>Time to Cook in minutes</h1>
@@ -19,13 +24,11 @@
             <input type="text" name="Ingredient2"><br><br>
             <h1>Time to Cook in  minutes</h1>
             <input type="number" name="time2"><br>
-            <h1>Date you want to cook your meal for (YYYY-MM-DD)</h1>
-            <input type="text" name="mealdate"><br>
-            <h1>What time do you want your meal to start (HH:MM:SS)</h1>
-            <input type="text" name="mealTime"><br><br>
-            <input type="Submit">
+            <!-- <input type="Submit"> -->
         </form>
+        <button type="submit" form="recipeeForm" value="Submit">Submit</button>
 
-    </div>    
+    </div>
+     <script src="./addrecipee.js" type="text/javascript"></script>   
 </body>
 </html>

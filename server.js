@@ -49,13 +49,7 @@ app.post("/track",(request,response)=>{
             return object;
         }
     })
-    // console.log(recipeeHolder[0]);
-
-    // console.log(recipeeHolder[0].date = new Date(recipeeHolder[0].date))
-    // console.log(recipeeHolder[0].time1 = new Date(recipeeHolder[0].time1))
-    // console.log(recipeeHolder[0].time2 = new Date(recipeeHolder[0].time2))
-
-    // console.log(recipeeHolder[0]);
+ 
     response.status(201).json(recipeeHolder[0]).end();
 })
 

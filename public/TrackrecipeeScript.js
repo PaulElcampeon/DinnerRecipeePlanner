@@ -22,7 +22,7 @@ function getRecipee(){
         alert("Tracking has been turned off");
     }
     
-    let action = document.getElementById("penguin").action;
+    let action = document.getElementById("trackingForm").action;
     let queryKey = document.getElementById("titleSub").name;
     let queryValue = document.getElementById("titleSub").value;
 
@@ -44,13 +44,6 @@ function displayRecipee(data){
     MealDateAndTime =  new Date(new Date(data.date)-60000*60);
     Ingredient1DateAndTime = new Date(new Date(data.time1)-60000*60);
     Ingredient2DateAndTime = new Date(new Date(data.time2)-60000*60);
-    // MealDateAndTime = new Date(data.date)
-    // Ingredient1DateAndTime = new Date(data.time1)
-    // Ingredient2DateAndTime = new Date(data.time2)
-
-    // MealDateAndTime = data.date;
-    // Ingredient1DateAndTime = data.time1;
-    // Ingredient2DateAndTime = data.time2;
 
     document.getElementById("recipeeHolder").innerHTML ="";
     let recipeeContainer = document.getElementById("recipeeHolder");

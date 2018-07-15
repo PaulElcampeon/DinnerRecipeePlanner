@@ -1,5 +1,5 @@
 document.getElementById("recipeeBtn").addEventListener("click",()=>{
-    location.href = './Recipee.html'
+    location.href = './addrecipee.html'
 })
 
 document.getElementById("trackRecipeeBtn").addEventListener("click",()=>{
